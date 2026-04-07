@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Govind Sriram: Contact</title>
 </head>
 <body>
@@ -11,24 +11,26 @@
         <a href="../index.html">Home</a>
         <a href="../projects/index.html">Projects</a>
         <a href="../resume/index.html">Resume</a>
-        <a href="../contact/index.html">Contact</a>
+        <a href="../contact/index.html" class="current">Contact</a>
         <a href="https://github.com/gsriram67" target="_blank">Github</a>
     </nav>
     <h1>Contact</h1> 
     <form action="mailto:gsriram@ucsd.edu" method="POST" enctype="text/plain">
         <label>
-            Email
+            Email:
             <input type="email" name="email">
         </label>
         <label>
-            Subject
+            Subject:
             <input name="subject">
         </label>
         <label>
-            Body
+            Body:
             <textarea name="body"></textarea>
         </label>
-        <button>Submit</button>
+        <label>
+            <button>Submit</button>
+        </label>
     </form>
 </body>
 </html>
