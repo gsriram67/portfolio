@@ -98,16 +98,20 @@ h6 {
     text-wrap: balance;
 }
 
-.resume-activity {
-    display: grid;
+.resume {
     gap: 1em;
-    article {
-        display: grid;
-        grid-template-rows: subgrid;
-        grid-row: span 3;
 
-        h2 {
-            margin: 0;
+    .resume-heading {
+        text-decoration-line: underline;
+    }
+
+    .resume-subheading {
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+        align-items: center;
+
+        .time-period {
+            justify-self: end;
         }
     }
 }
