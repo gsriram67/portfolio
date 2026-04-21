@@ -1,0 +1,74 @@
+[
+  {
+    "title": "kindle homebrew software",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "homebrew software on the kindle"
+  },
+  {
+    "title": "book finding software",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "privacy-focused book discovery website"
+  },
+  {
+    "title": "PKGBUILDs for AMD RoCM",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "unofficial and untested AMD RoCM packages for Arch Linux"
+  },
+  {
+    "title": "quick-cd",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "quick cd command for bash."
+  },
+  {
+    "title": "video game tooling",
+    "year": "2022",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "tools in Tcl to help port 1990s game files."
+  },
+  {
+    "title": "glonk",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "funny discord bot powered by gemini free tier"
+  },
+  {
+    "title": "card game library",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "abandoned card game library providing abstract types."
+  },
+  {
+    "title": "linux shell prompt customizer",
+    "year": "2022",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "dynamically generate shell prompt based on local information"
+  },
+  {
+    "title": "book classification software",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "book review classification software distilled from BERT models."
+  },
+  {
+    "title": "untitled project",
+    "year": "2020",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "I untitled this project"
+  },
+  {
+    "title": "character animation",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "terminal ascii video player"
+  },
+  {
+    "title": "comic ripping software",
+    "year": "2022",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "rip comics from gocomics"
+  }
+]
