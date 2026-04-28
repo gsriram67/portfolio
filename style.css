@@ -94,6 +94,10 @@ label.color-scheme {
             margin: 0;
         }
     }
+
+    .project-year {
+        color: grey;
+    }
 }
 
 h1 {
@@ -146,4 +150,11 @@ div#profile-stats {
         }
 
     }
+}
+
+#projects-plot {
+    max-width: 20em;
+    margin-block: 2em;
+
+    overflow: visible;
 }
