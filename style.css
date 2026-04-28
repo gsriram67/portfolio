@@ -9,7 +9,7 @@ html {
 
 body {
     font: 100%/1.5 system-ui;
-    max-width: 80ch;
+    max-width: 90ch;
     margin-inline: auto;
     padding: 1em;
 }
@@ -157,4 +157,62 @@ div#profile-stats {
     margin-block: 2em;
 
     overflow: visible;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+    flex: 1;
+    list-style-type: none;
+    align-items: center;
+    border: 0.17rem solid grey;
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+
+    .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+    }
+
+    .swatch {
+        width: 1rem;
+        height: 1rem;
+        background-color: var(--color);
+        border-radius: 50%;
+        display: inline-flex;
+        vertical-align: middle;
+    }
+
+    em {
+        color: grey;
+    }
+}
+
+&:has(path:hover) {
+    path:not(:hover) {
+        opacity: 0.5;
+    }
+}
+
+path {
+    transition: 300ms;
+}
+
+.selected {
+    --color: oklch(60% 45% 0) !important;
+
+    &:is(path) {
+        fill: var(--color);
+    }
+}
+
+path {
+    cursor: pointer;
 }
