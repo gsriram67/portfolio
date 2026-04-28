@@ -5,6 +5,7 @@ const projects = await fetchJSON('../lib/projects.json');
 const projectsContainer = document.querySelector('.projects');
 const projectsHeading = document.querySelector('.projects-title')
 let selectedIndex = -1;
+let filterYear = -1;
 
 function renderPieChart(projectsArray) {
     let svgEl = document.querySelector('#projects-plot');
@@ -59,13 +60,12 @@ function renderPieChart(projectsArray) {
                     ));
 
 
-                if (selectedIndex === -1) {
-                    renderProjects(projects, projectsContainer, 'h2');
-                } else {
-                    let selectedYear = data[selectedIndex].label;
-                    let filteredProjects = projects.filter((project) => project.year === selectedYear);
-
-                    renderProjects(filteredProjects, projectsContainer, 'h2');
+                if (selectedIndex != -1) {
+                    filterYear = data[selectedIndex].label
+                    filterProjects(query, filterYear)
+                }
+                else {
+                    filterProjects(query, filterYear)
                 }
             });
     });
@@ -85,19 +85,18 @@ let searchInput = document.querySelector('.searchBar');
 searchInput.addEventListener('input', (event) => {
     // update query value
     query = event.target.value;
-    let filteredProjects = projects.filter((project) => {
-        let values = Object.values(project).join('\n').toLowerCase();
-        return values.includes(query.toLowerCase());
-    })
-    renderPieChart(filteredProjects)
-    renderProjects(filteredProjects, projectsContainer, 'h2')
+    filterProjects(query, filterYear)
 });
 
 
 function filterProjects(q, year) {
     let filteredProjects = projects.filter((project) => {
         let values = Object.values(project).join('\n').toLowerCase();
-        return values.includes(query.toLowerCase()) && project.year==selectedYear;
+        if (selectedIndex != -1)
+            return values.includes(q.toLowerCase()) && project.year == year;
+        else
+            return values.includes(q.toLowerCase())
     })
-
+    //renderPieChart(filteredProjects)
+    renderProjects(filteredProjects, projectsContainer, 'h2')
 }
