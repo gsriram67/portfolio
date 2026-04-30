@@ -97,6 +97,6 @@ function filterProjects(q, year) {
         else
             return values.includes(q.toLowerCase())
     })
-    //renderPieChart(filteredProjects)
+    renderPieChart(filteredProjects)
     renderProjects(filteredProjects, projectsContainer, 'h2')
 }
