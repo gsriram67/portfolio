@@ -73,11 +73,30 @@ function renderCommitInfo(data, commits) {
     dl.append('dd').text(maxLineLength);
 }
 
+function brushed(event) {
+    const selection = event.selection;
+    console.log(selection)
+    d3.selectAll('circle').classed('selected', (d) =>
+        isCommitSelected(selection, d),
+    );
+}
+
+function isCommitSelected(selection, commit) {
+    if (!selection) {
+        return false;
+    }
+    const [x0, x1] = selection.map((d) => d[0]);
+    const [y0, y1] = selection.map((d) => d[1]);
+    const x = xScale(commit.datetime);
+    const y = yScale(commit.hourFrac);
+    return x >= x0 && x <= x1 && y >= y0 && y <= y1;
+}
 
 function createBrushSelector(svg) {
-    svg.call(d3.brush());
+    svg.call(d3.brush().on('start brush end', brushed));
     svg.selectAll('.dots, .overlay ~ *').raise();
 }
+
 function renderScatterPlot(data, commits) {
     // Put all the JS code of Steps inside this function
     const sortedCommits = d3.sort(commits, (d) => -d.totalLines);
