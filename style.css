@@ -216,3 +216,21 @@ path {
 path {
     cursor: pointer;
 }
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    align-content: center;
+
+    dt {
+        font-style: italic;
+        grid-row: 1;
+    }
+
+    dd {
+        font-style: initial;
+        grid-row: 2;
+    }
+
+}
