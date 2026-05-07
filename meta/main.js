@@ -201,7 +201,9 @@ function renderSelectionCount(selection) {
 function renderTooltipContent(commit) {
     const link = document.getElementById('commit-link');
     const date = document.getElementById('commit-date');
+    const time = document.getElementById('commit-time');
     const author = document.getElementById('commit-author');
+    const lines = document.getElementById('commit-lines');
 
     if (Object.keys(commit).length === 0) return;
 
@@ -210,7 +212,11 @@ function renderTooltipContent(commit) {
     date.textContent = commit.datetime?.toLocaleString('en', {
         dateStyle: 'full',
     });
+    time.textContent = commit.datetime?.toLocaleTimeString('en', {
+        timeStyle: 'short',
+    });
     author.textContent = commit.author;
+    lines.textContent = commit.totalLines;
 }
 
 function updateTooltipVisibility(isVisible) {
