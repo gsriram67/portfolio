@@ -234,3 +234,16 @@ path {
     }
 
 }
+
+svg {
+    g.gridlines line {
+        stroke: #e0e0e0;
+        /* Light grey */
+        stroke-opacity: 0.99;
+    }
+
+    g.gridlines path {
+        stroke-width: 0;
+        /* Hides the vertical domain line of the axis */
+    }
+}
