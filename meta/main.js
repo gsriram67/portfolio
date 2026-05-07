@@ -74,6 +74,10 @@ function renderCommitInfo(data, commits) {
 }
 
 
+function createBrushSelector(svg) {
+    svg.call(d3.brush());
+    svg.selectAll('.dots, .overlay ~ *').raise();
+}
 function renderScatterPlot(data, commits) {
     // Put all the JS code of Steps inside this function
     const sortedCommits = d3.sort(commits, (d) => -d.totalLines);
@@ -133,7 +137,7 @@ function renderScatterPlot(data, commits) {
         .append('g')
         .attr('transform', `translate(${usableArea.left}, 0)`)
         .call(yAxis);
-
+    createBrushSelector(svg)
     // add dots
     const dots = svg.append('g').attr('class', 'dots');
     const [minLines, maxLines] = d3.extent(commits, (d) => d.totalLines);
@@ -160,6 +164,7 @@ function renderScatterPlot(data, commits) {
             updateTooltipVisibility(false);
         });
 }
+
 
 function renderTooltipContent(commit) {
     const link = document.getElementById('commit-link');
