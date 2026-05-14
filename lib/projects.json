@@ -3,72 +3,84 @@
     "title": "kindle homebrew software",
     "year": "2023",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "homebrew software on the kindle"
+    "description": "homebrew software on the kindle",
+    "url": "",
   },
   {
     "title": "book finding software",
     "year": "2025",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "privacy-focused book discovery website"
+    "description": "privacy-focused book discovery website",
+    "url": "",
   },
   {
     "title": "PKGBUILDs for AMD RoCM",
     "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "unofficial and untested AMD RoCM packages for Arch Linux"
+    "description": "unofficial and untested AMD RoCM packages for Arch Linux",
+    "url": "",
   },
   {
     "title": "quick-cd",
     "year": "2024",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "quick cd command for bash."
+    "description": "quick cd command for bash.",
+    "url": "",
   },
   {
     "title": "video game tooling",
     "year": "2022",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "tools in Tcl to help port 1990s game files."
+    "description": "tools in Tcl to help port 1990s game files.",
+    "url": "",
   },
   {
     "title": "glonk",
     "year": "2025",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "funny discord bot powered by gemini free tier"
+    "description": "funny discord bot powered by gemini free tier",
+    "url": "",
   },
   {
     "title": "card game library",
     "year": "2025",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "abandoned card game library providing abstract types."
+    "description": "abandoned card game library providing abstract types.",
+    "url": "",
   },
   {
     "title": "linux shell prompt customizer",
     "year": "2022",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "dynamically generate shell prompt based on local information"
+    "description": "dynamically generate shell prompt based on local information",
+    "url": "",
   },
   {
     "title": "book classification software",
     "year": "2025",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "book review classification software distilled from BERT models."
+    "description": "book review classification software distilled from BERT models.",
+    "url": "",
   },
   {
-    "title": "untitled project",
-    "year": "2020",
+    "title": "Pathing",
+    "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "I untitled this project"
+    "description": "Bike Path and station use visualization in the Greater Boston area",
+    "url": "https://gsriram67.github.io/pathing/",
   },
   {
     "title": "character animation",
     "year": "2023",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "terminal ascii video player"
+    "description": "terminal ascii video player",
+    "url": "",
   },
   {
     "title": "comic ripping software",
     "year": "2022",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "rip comics from gocomics"
+    "description": "rip comics from gocomics",
+    "url": "",
   }
 ]
