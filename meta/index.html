@@ -15,6 +15,16 @@
     Statistics about this website and its code
     <div id="stats"></div>
     <h2>Commits by time of day</h2>
+    <div id="commit-controls">
+        <label>
+            <em>
+                Shows commits until:
+            </em>
+            <input type="range" min="0" max="100" id="commit-progress">
+            <time datetime="" id="commit-time"></time>
+        </label>
+    </div>
+
     <div id="chart"></div>
     <dl id="commit-tooltip" class="info tooltip" hidden>
         <dt>Commit</dt>
